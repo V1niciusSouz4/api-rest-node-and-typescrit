@@ -6,7 +6,7 @@ router.get('/', (req, res) => {
     return res.json('Olá, DEV!');
 });
 router.post('/teste', (req, res) => {
-    return res.json(req.body);
+    return res.status(401).json(req.body);
 });
 
 export { router };
